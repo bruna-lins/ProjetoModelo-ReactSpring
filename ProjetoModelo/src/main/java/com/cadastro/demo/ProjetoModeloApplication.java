@@ -8,7 +8,7 @@ import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 
 @EntityScan(basePackages = {"com.cadastro.model.entity"})
 @EnableJpaRepositories(basePackages = {"com.cadastro.repository"})
-@ComponentScan(basePackages = {"com.cadastro.controller", "com.cadastro.serviceImpl"})
+@ComponentScan(basePackages = {"com.cadastro.controller", "com.cadastro.service", "com.cadastro.serviceImpl"})
 @SpringBootApplication
 public class ProjetoModeloApplication {
 
