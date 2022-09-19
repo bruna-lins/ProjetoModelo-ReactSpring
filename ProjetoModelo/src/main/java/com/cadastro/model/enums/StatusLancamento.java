@@ -1,5 +1,9 @@
 package com.cadastro.model.enums;
 
-public class StatusLancamento {
+public enum StatusLancamento {
 
+	EFETIVADO,
+	PENDENTE,
+	CANCELADO
+	
 }

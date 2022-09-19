@@ -1,5 +1,7 @@
 package com.cadastro.model.enums;
 
-public class TipoLancamento {
-
+public enum TipoLancamento {
+	
+	RECEITA,
+	DESPESA
 }

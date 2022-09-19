@@ -1,5 +1,9 @@
 package com.cadastro.repository;
 
-public interface LancamentoRepository {
+import org.springframework.data.jpa.repository.JpaRepository;
+
+import com.cadastro.model.entity.Lancamento;
+
+public interface LancamentoRepository extends JpaRepository<Lancamento, Long>{
 
 }
