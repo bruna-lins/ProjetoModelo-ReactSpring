@@ -4,6 +4,7 @@ import java.util.Optional;
 
 import javax.transaction.Transactional;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.cadastro.exception.ErroAutenticacao;
@@ -14,12 +15,9 @@ import com.cadastro.service.UsuarioService;
 
 @Service
 public class UsuarioServiceImpl implements UsuarioService {
+	
+	@Autowired
 	private UsuarioRepository repository;
-
-	public UsuarioServiceImpl(UsuarioRepository repository) {
-		super();
-		this.repository = repository;
-	}
 
 	@Override
 	public Usuario autenticar(String email, String senha) {
